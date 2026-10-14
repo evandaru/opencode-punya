@@ -1,0 +1,424 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "enabled": true,
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer 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"
+      }
+    },
+    "playwright": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "enabled": true
+    },
+    "chrome-devtools": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ],
+      "enabled": true
+    },
+    "firecrawl": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "FIRECRAWL_API_KEY": "ISI_API_KEY_FIRECRAWL"
+      }
+    },
+    "brightdata": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@brightdata/mcp"
+      ],
+      "enabled": true,
+      "environment": {
+        "API_TOKEN": "ISI_API_TOKEN_BRIGHTDATA"
+      }
+    },
+    "context7": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "enabled": true
+    },
+    "memory": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "enabled": true
+    }
+  },
+  "provider": {
+    "9router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:20128/v1",
+        "apiKey": "sk-459f057ee9f95509-3i718b-3aa946b7"
+      },
+      "models": {
+        "buat-ngoding": {
+          "name": "buat-ngoding",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "xkiro-test": {
+          "name": "xkiro-test",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nr/agnes-2.0-flash": {
+          "name": "nr/agnes-2.0-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "combo-gemini": {
+          "name": "combo-gemini",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "deepseek-custom": {
+          "name": "deepseek-custom",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "muse-spark-gratisan": {
+          "name": "muse-spark-gratisan",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        }
+      }
+    },
+    "trustisgold": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "https://api.trustisgold.web.id/v1",
+        "apiKey": "sk-tig-42c0e86ccd816a70d6c73430b8603c4e17275cc0c586db74"
+      },
+      "models": {
+        "muse-spark-1.2-contributor": {
+          "name": "muse-spark-1.2-contributor",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "muse-spark-1.3-contributor": {
+          "name": "muse-spark-1.3-contributor",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "muse-spark-1.3-contributor-UNCENSORED": {
+          "name": "muse-spark-1.3-contributor-UNCENSORED",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "deepseek-v4.1-flash": {
+          "name": "deepseek-v4.1-flash",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "deepseek-v4.1-flash-UNCENSORED": {
+          "name": "deepseek-v4.1-flash-UNCENSORED",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "deepseek-v4.1": {
+          "name": "deepseek-v4.1",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "claude-opus-5": {
+          "name": "claude-opus-5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "claude-opus-5.5": {
+          "name": "claude-opus-5.5",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "claude-haiku-5.5": {
+          "name": "claude-haiku-5.5",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "big-pickle": {
+          "name": "big-pickle",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "mimo-v2.6-flash-UNCENSORED": {
+          "name": "mimo-v2.6-flash-UNCENSORED",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "longcat-2.5-preview": {
+          "name": "longcat-2.5-preview",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "space-bunny": {
+          "name": "space-bunny",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "atria-dawn-preview": {
+          "name": "atria-dawn-preview",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nemotron-3-ultra": {
+          "name": "nemotron-3-ultra",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nemotron-3-ultra-UNCENSORED": {
+          "name": "nemotron-3-ultra-UNCENSORED",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "nemotron-3.5-lightning": {
+          "name": "nemotron-3.5-lightning",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "step-5-preview": {
+          "name": "step-5-preview",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "glm-5.3-flash": {
+          "name": "glm-5.3-flash",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "laguna-s-2.1": {
+          "name": "laguna-s-2.1",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "pixel-canary": {
+          "name": "pixel-canary",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        },
+        "solar-mini4": {
+          "name": "solar-mini4",
+          "modalities": {
+            "input": [
+              "text"
+            ],
+            "output": [
+              "text"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "model": "9router/buat-ngoding",
+  "agent": {
+    "explorer": {
+      "description": "Fast explorer subagent for codebase exploration",
+      "mode": "subagent",
+      "model": "9router/cl/anthropic/claude-opus-4.6"
+    }
+  }
+}
